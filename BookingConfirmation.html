@@ -1,0 +1,824 @@
+<!doctype html>
+<html class="no-js" lang="" style="background:#fafafa;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>${Snippet('trans_title')} ${Snippet('reservationNumber')}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        @import url('http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+    </style>
+</head>
+<body style="font-family: 'Lato', Arial; width:100%; margin:0 auto; background:#FFFFFF; color:#585858; font-size: 14px; padding-bottom:50px;">
+<!--[if mso]>
+<style type="text/css">
+    body, table, td, span, p, b {font-family: Arial, Helvetica, sans-serif !important;}
+</style>
+<![endif]-->
+<table  cellpadding="0" cellspacing="0" style="font-family: 'Lato', Arial; width: 100%; margin: 0 auto; padding: 0" width="100%" bgcolor="#FFFFFF">
+    <tr>
+        <td width="*">&nbsp;</td>
+        <td width="680" style="padding: 0; width: 680px; margin: 0">
+
+
+            <table cellpadding="0" cellspacing="0" style="width: 100%; margin-top:10px;" >
+                <tr>
+                    <td rowspan="5" width="60%">
+                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/logo-cedok.png" style="margin:0; display: block; width: 220px; height: 99px;" width="220" height="99"/>
+                    </td>
+
+                </tr>
+
+                <tr >
+                    <td colspan="4" style="height: 5px;">&nbsp;</td>
+                </tr>
+                <tr>
+
+                    <td style="margin: 0; padding: 5px; ">
+                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/telefon.png" style="margin:0; display: block; width: 15px ; height: 15px; " width="15" height="15"/>
+                    </td>
+                    <td>
+                        <span style="font-size: 18px; color: #10447D; font-family: 'Lato', Arial; margin:0; font-weight: bold;">296 184 910</span>
+                    </td>
+                    <td	style="margin: 0; padding: 5px;">
+                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/obalka.png" style="margin:0; display: block; width: 15px; height: 15px;" width="15" height="15"/>
+                    </td>
+                    <td>
+                        <span><a href="mailto:info@cedok.cz" style="text-decoration: none; font-size: 18px; color: #10447D; font-family: 'Lato', Arial; margin:0; font-weight: bold;">info@cedok.cz</a></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td colspan="3" style="font-family: 'Lato', Arial; color: #10447D;padding: 0; font-size: 12px; margin-top: -10px;">pondělí – neděle: 08 – 21 hod.</td>
+
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+
+            <table cellpadding="0" cellspacing="0" style="width: 800px; text-align: center;">
+                <tr>
+                    <td colspan="4" style="border-top: 1px solid #DADFE6;">
+                        &nbsp;
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <p style="font-family: 'Lato', Arial; margin-top: 15px; padding-bottom:5px;font-size: 16px;margin-bottom: 0">
+                <b>${Snippet('trans_welcome')}<if condition="SnippetExists('customerNameForBeginning')"> ${Snippet('customerNameForBeginning')}</if>,</b>
+            </p>
+            <p style="font-family: 'Lato', Arial; margin-right: 20px;  font-size: 16px; line-height: 150%; margin-top: 0">
+                ${Snippet('trans_introtext')} <b>${Snippet('dateFrom')}
+                    <if condition="SnippetExists('dateTo')">– ${Snippet('dateTo')}</if>.</b>
+            </p>
+
+            <table cellpadding="0" cellspacing="0" style="width: 100%; padding: 0">
+                <tr>
+                    <td style="font-family: 'Lato', Arial; padding-top: 20px; padding-bottom: 5px; margin: 0; font-size: 16px;">Číslo Vaší objednávky</td>
+                </tr>
+                <tr>
+                    <td style="font-family: 'Lato', Arial; width: 50%;font-size: 35px; font-weight: bold;  padding: 0; color: #10447D">${Snippet('reservationNumber')}</td>
+                    <td style="padding: 0; width: 50%;">
+                        <table style="padding: 0 90px 0 60px;"  cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="width: 50%;">
+                                    <table style="padding: 5px; background-color: #1E3A8E; margin-left:auto; margin-right: auto;">
+
+                                        <td><img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/stazeni.png" style="display: block; padding:0; width: 25px; height: 25px;" width="25" height="25"/></td>
+                                        <td style="font-family: 'Lato', Arial; font-size: 16px; padding:0; padding-left: 10px; padding-right: 10px;">
+                                            <a href="${Snippet('confirmationPrintLink')}" style="text-decoration: none; color: white;" title="${Snippet('trans_getReservationPdf')}">Stáhnout potvrzení</a>
+                                        </td>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+            </table>
+
+            <table>
+                <tr>
+                    <td style="height: 20px;">&nbsp;</td>
+                </tr>
+            </table>
+
+
+            <table cellpadding="0" cellspacing="0" style="width: 100%; margin-top: 30px; margin-left: auto; margin-right: auto; margin-bottom: 30px;">
+                <tr>
+                    <td style="width:25%; padding: 0; padding-top: 26px; padding-bottom: 15px;">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="25%" style="padding: 0">
+                                    &nbsp;
+                                </td>
+                                <td style="width: 30%; text-align: center; padding: 0">
+                                    <center>
+                                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/ok.png"/>
+                                    </center></td>
+                                <td width="25%" style="padding: 0">
+                                    <table width="100%" cellpadding="0" cellspacing="0" >
+                                        <tr>
+                                            <td style="background-color: #7eb92f; height: 3px; font-size: 1px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width:25%; padding: 0; padding-top: 26px; padding-bottom: 15px">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="25%" style="padding: 0">
+                                    <table width="100%" cellpadding="0" cellspacing="0" >
+                                        <tr>
+                                            <td style="background-color: #DADFE6; height: 3px; font-size: 1px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td width="35%" style="text-align: center; padding: 0">
+                                    <center>
+                                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/arrow_red_big.png"/>
+                                    </center></td>
+                                <td width="25%" style="padding: 0">
+                                    <table width="100%" cellpadding="0" cellspacing="0" >
+                                        <tr>
+                                            <td style="background-color: #DADFE6; height: 3px; font-size: 1px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="width:25%; padding: 0; padding-top: 26px; padding-bottom: 15px">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td width="25%" style="padding: 0">
+                                    <table width="100%" cellpadding="0" cellspacing="0" >
+                                        <tr>
+                                            <td style="background-color: #DADFE6; height: 3px; font-size: 1px">&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="width: 30%; text-align: center; padding: 0">
+                                    <center>
+                                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/arrow_grey.png"/>
+                                    </center></td>
+
+                                <td width="25%" style="padding: 0">
+                                    <if condition="SnippetExists('hasOpinion')">
+                                        <table width="100%" cellpadding="0" cellspacing="0" >
+                                            <tr>
+                                                <!--<td style="background-color: #DADFE6; height: 3px; font-size: 1px">&nbsp;</td>-->
+                                                <td style="background-color: #FFFFFF; height: 3px; font-size: 1px">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </if>
+                                </td>
+
+                            </tr>
+                        </table>
+                    </td>
+                    <!--
+                    <td style="width:25%; padding: 0; padding-top: 26px; padding-bottom: 15px">
+                        <if condition="SnippetExists('hasOpinion')">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td width="35%" style="padding: 0">
+                                        <table width="100%" cellpadding="0" cellspacing="0" >
+                                            <tr>
+                                                <td style="background-color: #DADFE6; height: 3px; font-size: 1px">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td style="width: 30%; text-align: center; padding: 0">
+                                        <center>
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/arrow_grey.png"/>
+                                        </center></td>
+                                    <td width="35%" style="padding: 0">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                        </if>
+                    </td>
+                    -->
+
+                </tr>
+                <tr>
+                    <td style="padding: 0; width:25%">
+                        <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="font-family: 'Lato', Arial; width:100%; text-align: center;color:#7eb92f; padding: 0; font-size: 15px;">
+                                    <b>Založení</b><br/>
+                                    <b>objednávky</b><br/>
+                                    <p style="font-size: 12px;">${Snippet('processDate1')}</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="padding: 0; width:25%">
+                        <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="font-family: 'Lato', Arial; width:100%;text-align: center;;color:black;padding: 0; font-size: 15px;">
+                                    <b>Platba</b><br/>
+                                    <b>zálohy</b><br/>
+                                    <if condition="SnippetExists('processDate2')">
+                                        <p style="font-size: 12px">${Snippet('processDate2')}</p>
+                                    </if>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="padding: 0; width:25%">
+                        <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="font-family: 'Lato', Arial; width:100%; text-align: center;color:#BBB7B7;padding: 0; font-size: 15px;">
+                                    <b>Kontrola </b><br/>
+                                    <b>údajů</b><br/>
+                                    <p style="font-size: 12px">${Snippet('processDate3')}</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <!--
+                    <td style="padding: 0; width:25%">
+                        <if condition="SnippetExists('hasOpinion')">
+                            <table style="width: 100%;" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="font-family: 'Lato', Arial; width:100%;text-align: center;color:#BBB7B7;padding: 0; font-size: 15px;">
+                                        <b>${Snippet('trans_opinionLine1')}</b><br/>
+                                        <b>${Snippet('trans_opinionLine2')}</b><br/>
+                                        <p style="font-size: 12px">${Snippet('processDate4')}</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </if>
+                    </td>
+                    -->
+
+                </tr>
+
+
+            </table>
+            <table>
+                <tr>
+                    <td style="height: 20px;">&nbsp;</td>
+                </tr>
+            </table>
+
+
+
+            <table cellpadding="0" cellspacing="0" style="width: 100%; margin: 0;">
+                <tr>
+                    <td style="padding: 0;">
+                        <table width="100%" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td style="margin: 0;">
+
+
+
+                                    <center>
+                                        <table cellpadding="0" cellspacing="0" style=" width: 100%;">
+                                            <tr>
+                                                <td rowspan="10" style="margin: 0; padding: 0; width: 50%; text-align: center; ">
+                                                    <center>
+                                                        <if condition="SnippetExists('fullPhotoLink')">
+                                                            <img src="${Snippet('fullPhotoLink')}" style="width:450px; padding: 0; margin: 0;" width="450" />
+                                                        </if>
+                                                        <if condition="SnippetExists('photo')">
+                                                            <img src="https://i.content4travel.com/cms/img/u/desktop/clientareareservation/${Snippet('photo')}" style="width:450px; padding: 0; margin: 0;" width="450"/>
+                                                        </if>
+                                                    </center>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td width="50%;">
+                                                    <table  style="padding: 5px 10px 5px 10px;">
+                                                        <tr>
+                                                            <td>
+                                                                <h3 style="padding: 0; margin: 0; font-family: 'Lato', Arial; ">
+                                                                    <span style="font-size: 17px; color:#1E3A8E; font-family: 'Lato', Arial; font-weight: bold;"><b>${Snippet('name')}</b></span>
+                                                                    </br>
+                                                                    <if condition="SnippetExists('stars')">
+                                                                        <span>${Snippet('stars')}</span>
+                                                                    </if>
+                                                                </h3>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <if condition="SnippetExists('destination')">
+                                                <tr>
+                                                    <td>
+                                                        <table style="padding: 3px 10px 3px 10px;">
+                                                            <tr>
+                                                                <td style="margin: 0;">
+                                                                    <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/lokace.png" style="margin:0; display: block; width: 15px; height: 15px;" width="15" height="15"/>
+                                                                </td>
+                                                                <td style="font-size: 12px; color: #CFCFCF; font-family: 'Lato', Arial; padding: 0;">
+                                                                    <span>${Snippet('destination')}</span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </if>
+                                            <if condition="SnippetExists('daysDateFrom')">
+                                                <tr>
+                                                    <td>
+                                                        <table style="padding: 3px 10px 3px 30px;">
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/kalendar.png" style=" margin:0; display: block; width: 25px; height: 25px;" width="25" height="25"/>
+                                                                </td>
+                                                                <td style="font-family: 'Lato', Arial; font-size: 15px; color: #000000; padding: 0;">
+																					<span><b>${Snippet('daysDateFrom')}
+																					<if condition="SnippetExists('daysDateTo')">
+																					– ${Snippet('daysDateTo')}
+																					</if> </b></span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </if>
+
+
+
+                                            <if condition="SnippetExists('There_from')">
+                                                <tr>
+                                                    <td>
+                                                        <table style="padding: 3px 10px 3px 30px;">
+                                                            <tr>
+                                                                <td>
+                                                                    <if condition="SnippetExists('isTrain')">
+                                                                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/train.png" style="display: block; margin:0; width: 25px; height: 25px;" width="25" height="25"/>
+                                                                    </if>
+                                                                    <if condition="SnippetExists('isBus')">
+                                                                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/bus.png" style="display: block; margin:0; width: 25px; height: 25px;" width="25" height="25"/>
+                                                                    </if>
+                                                                    <if condition="SnippetExists('isNotBus')">
+                                                                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/letadlo.png" style="display: block; margin:0;width: 25px; height: 25px;" width="25" height="25"/>
+                                                                    </if>
+                                                                    <if condition="SnippetExists('isCar')">
+                                                                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/vlastni-doprava.png" style="display: block; margin:0;width: 25px; height: 25px;" width="25" height="25"/>
+                                                                    </if>
+                                                                </td>
+                                                                <td style="font-family: 'Lato', Arial; font-size: 15px; color: #000000; padding: 0;">
+                                                                    <span>${Snippet('There_from')} <if condition="SnippetExists('There_to')">– ${Snippet('There_to')} – ${Snippet('There_from')}</span></if>
+                                            </td>
+                                            </tr>
+                                        </table>
+                                </td>
+                            </tr>
+                            </if>
+
+                            <if condition="SnippetExists('food')">
+                                <tr>
+                                    <td>
+                                        <table style="padding: 3px 10px 3px 30px;">
+                                            <tr>
+                                                <td>
+                                                    <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/jidlo.png" style="margin:0; display: block; width: 25px; height: 25px;" width="25" height="25"/>
+                                                </td>
+                                                <td style="font-size: 15px; color: #000000; font-family: 'Lato', Arial; padding: 0;">
+                                                    <span >${Snippet('food')}</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </if>
+                            <if condition="SnippetExists('extra_services')">
+                                <tr>
+                                    <td>
+                                        <table style="padding: 3px 10px 3px 30px;">
+                                            <tr>
+                                                <td style="font-size: 13px; color: #000000; font-family: 'Lato', Arial; ">
+                                                    <b>Služby:</b>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                <tr>
+                                    <td style="margin: 0;">
+                                        <table style="padding: 3px 10px 3px 30px;">
+                                            <tr>
+                                                <td style=" font-size: 12px; color: #000000; font-family: 'Lato', Arial;">
+                                                    <span>${Snippet('extra_services')}</span>
+
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                </tr>
+                            </if>
+
+                            <if condition="SnippetExists('daysDateFrom')">
+                                <tr>
+                                    <td>
+                                        <table style="padding: 5px 10px 5px 30px;">
+                                            <tr>
+                                                <td style="color: #000000; font-family: 'Lato', Arial; ">
+																					<span> <b style="font-size: 13px; color: #000000; font-family: 'Lato', Arial;">Cena celkem:<br/>
+																					<b style="color:#1E3A8E; font-size: 17px; font-family: 'Lato', Arial; font-weight: bold;">${Snippet('totalPrice')}</b></span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </if>
+                        </table>
+                        </center>
+
+                        <br/>
+
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td style="height: 20px;">&nbsp;</td>
+    </tr>
+</table>
+
+
+<table cellpadding="0" cellspacing="0" style="width: 100%; margin: 0; margin-left: auto; margin-right: auto; background-color: #ecf0f9;">
+    <tr>
+        <td style="padding: 0; padding-top: 10px;">
+            <table  cellpadding="0" cellspacing="0" style="width: 100%;">
+                <tr>
+                    <td>
+                        <center>
+                            <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                    <if condition="SnippetExists('BookingFee_amount')">
+                                        <td>
+                                            <table style="padding: 5px; margin-left: auto; margin-right: auto; margin:0; padding-left: 10px;">
+                                                <tr>
+                                                    <td>
+
+                                                        <p style="padding: 0; margin: 0; line-height: 100%;">
+                                                            <span style="font-family: 'Lato', Arial; font-size: 13px">Záloha:</span> <br/>
+                                                            <span style="color: #1E3A8E; font-size: 17px; font-weight: bold; font-family: 'Lato', Arial;">${Snippet('BookingFee_amount')}</span><br/>
+                                                            <span style="color: black; font-family: 'Lato', Arial; font-size: 12px;">${Snippet('trans_payTo')}</span> <span style="color: black; font-family: 'Lato', Arial; font-size: 12px;">${Snippet('BookingFee_dateTo')}</span>
+                                                        </p>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </if>
+
+                                    <if condition="SnippetExists('PrePayment_amount')">
+                                        <td>
+                                            <table style="padding: 5px; margin-left: auto; margin-right: auto; margin:0; padding-left: 10px;">
+                                                <tr>
+                                                    <td>
+
+                                                        <p style="padding: 0; margin: 0; line-height: 100%;">
+                                                            <span style="font-family: 'Lato', Arial; font-size: 13px">Záloha:</span> <br/>
+                                                            <span style="color: #1E3A8E; font-size: 17px; font-weight: bold; font-family: 'Lato', Arial; ">${Snippet('PrePayment_amount')}</span><br/>
+                                                            <span style="color: black; font-family: 'Lato', Arial; font-size: 12px;">${Snippet('trans_payTo')}</span> <span style="color: black; font-family: 'Lato', Arial; font-size: 12px;">${Snippet('PrePayment_dateTo')}</span>
+                                                        </p>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </if>
+
+                                    <td>
+                                        <table >
+                                            <if condition="SnippetExists('canPayOnline')">
+                                                <tr>
+                                                    <td  style="padding: 0 50px 0 70px; margin: 0; ">
+                                                        <table style="padding: 5px; background-color: #FFD200; margin-left:auto; margin-right: auto; margin: 0; ">
+                                                            <tr>
+
+                                                                <td>
+                                                                    <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/online-platba.png" style="margin:0; display: block; width: 25px; height: 25px;" width="25" height="25"/>
+                                                                </td>
+
+                                                                <td style="font-family: 'Lato', Arial; font-size: 16px; padding:0; padding-left: 10px; padding-right: 10px;">
+                                                                    <a href="${Snippet('myItakaLink')}" title="${Snippet('trans_onlinePayment')}" style="color:#1E3A8E; font-family: 'Lato', Arial;  display: block;">Online platba</a>
+
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="font-size: 12px; text-align:center; margin-left:auto; margin-right: auto; margin: 0;">
+                                                        <table style="padding: 1px; margin-left:auto; margin-right: auto; margin: 0 auto;">
+                                                            <td>
+                                                                <span style="font-size: 12px; color:#17375e; font-family: 'Lato', Arial;  display: block; padding: 2px 0; padding-left: 5px; text-align:center; margin-left:auto; margin-right: auto; margin: 0 auto; line-height: 90%;"><i>Platba kartou nebo expresním bankovním převodem.</i></span>
+                                                            </td>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </if>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 25%;">
+                                        <table  style="padding: 5px; margin-left: auto; margin-right: auto; margin: 0; padding-left: 10px;">
+                                            <tr>
+                                                <td>
+                                                    <if condition="SnippetExists('RestPayment_amount')">
+                                                        <p style="padding: 0; margin: 0; line-height: 100%;">
+                                                            <span style="font-family: 'Lato', Arial; font-size: 13px">Doplatek:</span> <br/>
+                                                            <span style="color: #1E3A8E; font-size: 17px; font-weight: bold; font-family: 'Lato', Arial;">${Snippet('RestPayment_amount')}</span><br/>
+                                                            <span style="color: black; font-family: 'Lato', Arial; font-size: 12px;">${Snippet('trans_payToShort')}</span> <span style="color: black; font-family: 'Lato', Arial; font-size: 12px;">${Snippet('RestPayment_dateTo')}</span>
+                                                        </p>
+                                                    </if>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+
+
+                                    <td colspan="2" style="width: 75%;">
+                                        <table style="padding: 5px; margin: 0; padding-left: 10px;">
+                                            <tr>
+                                                <td>
+                                                    <span style="color: black; font-family: 'Lato', Arial; font-size: 12px; line-height: 120%;"><b>Standardním bankovním převodem na číslo účtu</b>: 2108416269/2700</span><br/>
+                                                    <span style="color: black; font-family: 'Lato', Arial; font-size: 12px; line-height: 120%;"><b>Variabilní symbol</b>: ${Snippet('reservationNumber')} (číslo Vaší objednávky)</span><br/>
+                                                    <span style="color: black; font-family: 'Lato', Arial; font-size: 12px; line-height: 120%;">Případně můžete zaplatit na kterékoliv <a href="https://www.cedok.cz/nase-prodejny/">naší pobočce</a>.</span><br/>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+
+                                </tr>
+                            </table>
+                        </center>
+
+                        <br/>
+
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td style="height: 20px;">&nbsp;</td>
+    </tr>
+</table>
+
+
+<table cellpadding="0" cellspacing="0" style="width: 100%; margin: 0; padding-bottom: 5px;">
+    <tr>
+        <td style="padding: 0; padding-top: 10px;">
+            <table style="width: 100%; text-align: center;" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="padding-top: 0; padding-bottom: 5px;">
+                        <h4 style="font-family: 'Lato', Arial;  color:#17375e; font-size: 18px; padding: 0; margin: 0; text-align: center;">
+                            ${Snippet('trans_docsToDownload')}
+                        </h4>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td style="height: 10px;">&nbsp;</td>
+    </tr>
+</table>
+
+<table cellpadding="0" cellspacing="0" style="width: 100%; margin: 0; margin-left: auto; margin-right: auto;">
+    <tr>
+        <td style="padding: 0;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="text-align: center;">
+
+
+
+                        <center>
+                            <table cellpadding="0" cellspacing="0" style="margin-top: 20px;">
+                                <tr>
+                                    <td style="margin: 0; width: 10%; vertical-align: middle; padding: 3px;">
+                                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/pdf.png" style="display: block; margin:0;"/>
+                                    </td>
+                                    <td style="margin:0; padding: 3px;">
+                                        <a href="${Snippet('confirmationPrintLink')}" style="font-family: 'Lato', Arial; color:#17375e; font-size: 13px;" title="${Snippet('trans_reservationConfirmation')}">${Snippet('trans_reservationConfirmation')}</a>
+                                    </td>
+
+                                    <td style="margin: 0; width: 10%; vertical-align: middle; padding: 3px;">
+                                        <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/pdf.png" style="display: block; margin:0;"/>
+                                    </td>
+                                    <td style="margin:0; padding: 3px;">
+                                        <a href="${Snippet('regulationsPdf')}" style="font-family: 'Lato', Arial; color:#17375e; font-size: 13px;" title="${Snippet('trans_regulationsPdfLine1')} ${Snippet('trans_regulationsPdfLine2')}">${Snippet('trans_regulationsPdfLine1')}<br/>${Snippet('trans_regulationsPdfLine2')}</a>
+                                    </td>
+                                    <if condition="SnippetExists('showInformationLinkToDownload')">
+                                        <td style="margin: 0; width: 10%; vertical-align: middle; padding: 3px;">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/pdf.png" style="display: block; margin:0;"/>
+                                        </td>
+                                        <td style="margin:0; padding: 3px;">
+                                            <a href="${Snippet('informationFormLink')}" style="font-family: 'Lato', Arial; color:#17375e; font-size: 13px;" title="${Snippet('trans_informationForm')}">${Snippet('trans_informationForm')}</a>
+                                        </td>
+                                    </if>
+
+                                </tr>
+
+                                <tr>
+                                    <if condition="SnippetExists('insuranceInfo')">
+                                        <td style="margin: 0; width: 10%; vertical-align: middle; padding: 3px;">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/pdf.png" style="display: block; margin:0;"/>
+                                        </td>
+                                        <td style="margin:0; padding: 3px;">
+                                            <a href="https://www.itaka.pl/warunki/ubezpieczenie/" title="${Snippet('trans_insuranceRegulationPdf')}" style="font-family: 'Lato', Arial; color:#17375e; font-size: 13px; ">${Snippet('trans_insuranceRegulationPdf')}</a>
+                                        </td>
+                                    </if>
+                                    <if condition="SnippetExists('benefitsRegulation')">
+                                        <td style=" margin: 0; width: 10%; vertical-align: middle; padding: 3px;">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/pdf.png" style="display: block; margin:0;"/>
+                                        </td>
+                                        <td style="margin:0; padding: 3px;">
+                                            <a href="${Snippet('benefitsRegulation')}" style="font-family: 'Lato', Arial; color:#17375e; font-size: 13px;" title="${Snippet('trans_promotionRegulationPdf')}">
+                                                ${Snippet('trans_promotionRegulationPdf')}
+                                            </a>
+                                        </td>
+                                    </if>
+                                    <if condition="SnippetExists('productCard')">
+                                        <td style="width: 10%; vertical-align: middle; padding: 3px;">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/pdf.png" style="display: block; margin:0;"/>
+                                        </td>
+                                        <td style="margin:0; padding: 3px;">
+                                            <a href="${Snippet('productCardLink')}" style="font-family: 'Lato', Arial; color:#17375e; font-size: 13px;" title="${Snippet('trans_productCard')}">
+                                                ${Snippet('trans_productCard')}
+                                            </a>
+                                        </td>
+                                    </if>
+                                </tr>
+
+                                <tr>
+                                    <if condition="SnippetExists('practicalInformationsUrl')">
+                                        <td style="width: 10%; vertical-align: middle; padding: 3px;">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/pdf.png" style="display: block; margin:0;"/>
+                                        </td>
+                                        <td style="margin:0; padding: 3px;">
+                                            <a href="${Snippet('practicalInformationsUrl')}" style="font-family: 'Lato', Arial; color:#17375e; font-size: 13px;" title="${Snippet('trans_practicalInformations')}">
+                                                ${Snippet('trans_practicalInformations')}
+                                            </a>
+                                        </td>
+                                    </if>
+                                    <if condition="SnippetExists('showGIODO')">
+                                        <td style="width: 10%; vertical-align: middle; padding: 3px;">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/pdf.png" style="display: block; margin:0;"/>
+                                        </td>
+                                        <td style="margin:0; padding: 3px;">
+                                            <a href="${Snippet('siteUrl')}/cms/img/1/img/mailer/Formularz_zgody_na_kontakt_elektroniczny.pdf" title="${Snippet('trans_giodoFormPdf')}" style="font-family: 'Lato', Arial; color:#17375e; font-size: 13px;">${Snippet('trans_giodoFormPdf')}</a>
+                                        </td>
+                                        <td style="padding: 3px;" colspan="2">
+                                            &nbsp;
+                                        </td>
+                                    </if>
+                                </tr>
+
+                            </table>
+                        </center>
+
+                        <br/>
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td style="height: 10px;">&nbsp;</td>
+    </tr>
+</table>
+
+
+
+
+<table cellpadding="0" cellspacing="0" style="width: 100%; padding:10px 0;">
+    <tr>
+        <td style="width:8%; background-color: #ecf0f9; padding:10px;text-align: center;">
+            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/upozorneni.png" style="display: block; margin:0 auto;width:15px; width: 25px; height: 25px;" width="25" height="25"/>
+        </td>
+        <td style="width:92%; background-color: #ecf0f9; padding:10px; font-size: 10px;">
+								<span style="color: #000000; font-size: 10px; font-family: 'Lato', Arial; line-height: 80%;">
+									Každý z účastníků vyjíždějících mimo Evropskou unii musí mít platný cestovní pas. Při výjezdu do zemí EU je požadován občanský průkaz nebo cestovní pas. Informace o aktuálních požadavcích na víza a platnosti cestovních dokladů najdete <a href="https://www.mzv.cz/jnp/">zde</a>.
+								</span>
+
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td style="height: 10px;">&nbsp;</td>
+    </tr>
+</table>
+
+
+<table cellpadding="0" cellspacing="0" style="width: 100%; margin: 0;">
+    <tr>
+        <td style="padding: 0;">
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="padding-bottom: 5px; padding-top: 5px; text-align: center;">
+
+
+
+                        <center>
+                            <table cellpadding="0" cellspacing="0" style="margin-top: 20px; margin-bottom: 10px;">
+                                <tr>
+                                    <td style="padding:0 3px; margin:0;">
+                                        <a href="https://www.facebook.com/ck.cedok?utm_source=potvrzen%C3%AD%20o%20prodeji&utm_medium=email" title="Facebook">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/f.png" style="display: block; margin:0; width: 25px; height: 25px;" width="25" height="25" />
+                                        </a>
+                                    </td>
+                                    <td style="padding:0 3px; margin:0;">
+                                        <a href="https://www.instagram.com/ckcedok/?utm_source=potvrzen%C3%AD%20o%20prodeji&utm_medium=email" title="Instagram">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/inst.png" style="display: block; margin:0; width: 25px; height: 25px;" width="25" height="25"/>
+                                        </a>
+                                    </td>
+                                    <td style="padding:0 3px; margin:0;">
+                                        <a href="https://www.linkedin.com/company/cedok-a-s-/?utm_source=potvrzen%C3%AD%20o%20prodeji&utm_medium=email" title="Linkedin">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/linke.png" style="display: block; margin:0; width: 25px; height: 25px;" width="25" height="25"/>
+                                        </a>
+                                    </td>
+
+                                    <td style="padding:0 3px; margin:0;">
+                                        <a href="https://www.youtube.com/channel/UCxO21xiA1a8f7RuTTCLxMUg?utm_source=potvrzen%C3%AD%20o%20prodeji&utm_medium=email" title="Youtube">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/yt.png" style="display: block; margin:0; width: 25px; height: 25px;" width="25" height="25"/>
+                                        </a>
+                                    </td>
+                                    <td style="padding:0 3px; margin:0;">
+                                        <a href="https://twitter.com/CKCEDOK?utm_source=potvrzen%C3%AD%20o%20prodeji&utm_medium=email" title="Twitter">
+                                            <img src="${Snippet('siteUrl')}/cms/img/1/img/mailer/twit.png" style="display: block; margin:0; width: 25px; height: 25px;" width="25" height="25"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </center>
+
+                        <br/>
+
+
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <td style="height: 10px;">&nbsp;</td>
+    </tr>
+</table>
+
+
+
+<table width="100%" style="background-color: #1E3A8E; padding: 5px; font-family: 'Lato', Arial;">
+    <tr>
+        <td style="width: 33%; text-align:left; font-size: 12px; padding-left: 15px; color: white !important; text-decoration: none;"><a href="https://www.cedok.cz/?utm_source=potvrzen%C3%AD%20o%20prodeji&utm_medium=email" style="text-decoration: none; color: white; font-family: 'Lato', Arial; cursor: pointer;"> www.cedok.cz </a></td>
+        <td style="width: 33%; text-align: center; color: white; font-size: 12px; font-family: 'Lato', Arial;">© 2020, cestovní kancelář Čedok a.s. </td>
+        <td style="width: 33%;"></td>
+
+    </tr>
+</table>
+
+
+
+</td>
+<td width="*">&nbsp;</td>
+</tr>
+</table>
+</body>
+</html>
